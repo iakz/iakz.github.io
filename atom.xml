@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-05-08T01:14:59.274Z</updated>
+  <updated>2019-05-08T01:51:44.210Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git关联远程分支并上传</title>
+    <link href="http://yoursite.com/2019/05/08/git%E5%85%B3%E8%81%94%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E5%B9%B6%E4%B8%8A%E4%BC%A0/"/>
+    <id>http://yoursite.com/2019/05/08/git关联远程分支并上传/</id>
+    <published>2019-05-08T01:44:53.000Z</published>
+    <updated>2019-05-08T01:51:44.210Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、在github上建一个hexo分支<br>2、然后在这个仓库的settings中，选择默认分支为hexo分支（这样每次同步的时候就不用指定分支，比较方便）<br>3、然后在本地的任意目录下，打开git bash<br>    git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:ZJUFangzh/ZJUFangzh.github.io.git<br>    将其克隆到本地，因为默认分支已经设成了hexo，所以clone时只clone了hexo<br>4、接下来在克隆到本地的ZJUFangzh.github.io中，把除了.git 文件夹外的所有文件都删掉<br>5、把之前我们写的博客源文件全部复制过来，除了.deploy_git<br>6、而后在git bash中输入以下命令上传代码<br>    git add .<br>    git commit –m “add branch”<br>    git push<br>注意：<br>    复制过来的源文件应该有一个.gitignore，用来忽略一些不需要的文件，如果没有的话，自己新建一个，在里面写上如下，表示这些类型文件不需要git：<br>    .DS_Store<br>    Thumbs.db<br>    db.json<br>    <em>.log<br>    node_modules/<br>    public/<br>    .deploy</em>/<br>注意，<br>    如果你之前克隆过theme中的主题文件，那么应该把主题文件中的.git文件夹删掉，因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1、在github上建一个hexo分支&lt;br&gt;2、然后在这个仓库的settings中，选择默认分支为hexo分支（这样每次同步的时候就不用指定分支，比较方便）&lt;br&gt;3、然后在本地的任意目录下，打开git bash&lt;br&gt;    git clone &lt;a href=&quot;mai
+      
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>github创建分支</title>
